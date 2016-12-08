@@ -1,0 +1,27 @@
+{
+    "CraftInHandRecipe": {
+        "recipeId": "Woodcrafting:AxeHammerHead",
+        "itemResult": "Woodcrafting:AxeHammerHead",
+        "recipeComponents": ["1*Woodcrafting:stone"],
+        "recipeTools": ["1*Woodcrafting:toolStone"]
+    },
+    "Parent": "CrudeAssemblingBaseProcessPart",
+    "ProcessDefinition": {
+        "processType": "Woodcrafting:CraftInHandProcess"
+    },
+    "RequirementInput": {
+        "requirements": [
+            "ToolStone"
+        ]
+    },
+    "InventoryInput": {
+        "itemCounts": {
+            "Woodcrafting:stone": 1
+        }
+    },
+    "InventoryOutput": {
+        "itemCounts": {
+            "Woodcrafting:AxeHammerHead": 1
+        }
+    }
+}

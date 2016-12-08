@@ -1,0 +1,24 @@
+{
+    "parent": "engine:iconItem",
+    "Item": {
+        "icon": "Woodcrafting:items#Flint",
+        "stackId": "Woodcrafting:flint"
+    },
+    "DisplayName": {
+        "name": "Flint"
+    },
+    "ProcessRequirementsProvider": {
+        "requirements": [
+            "Flint"
+        ]
+    },
+    "CraftInHandIngredient": {
+        "componentType": "Woodcrafting:flint"
+    },
+    "ItemHelp": {
+        "category": "Woodcrafting",
+        "paragraphText": [
+          "A hard sedimentary rock that can be used for making tools and starting fires."
+        ]
+    }
+}

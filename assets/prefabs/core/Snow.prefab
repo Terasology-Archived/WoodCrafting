@@ -1,0 +1,6 @@
+{
+    "BlockDropGrammar": {
+        "itemDrops": ["0.5|Woodcrafting:stone", "0.1|Woodcrafting:flint"]
+    },
+    "Tillable": {}
+}

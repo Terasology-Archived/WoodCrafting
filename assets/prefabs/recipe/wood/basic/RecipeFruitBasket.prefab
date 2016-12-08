@@ -1,0 +1,33 @@
+{
+    "Parent": "BasicWoodcraftingBaseProcessPart",
+    "ProcessDefinition": {
+        "processType": "Woodcrafting:BasicWoodcraftingProcess"
+    },
+    "CraftingStationRecipe": {
+        "recipeId": "Storage|Woodcrafting:FruitBasket",
+
+        "recipeComponents": ["7*Woodcrafting:twig", "2*Woodcrafting:stick"],
+        "recipeTools": ["1*axe"],
+
+        "itemResult": "1*Woodcrafting:FruitBasket"
+    },
+    "ProcessingTime": {
+        "duration": 1000
+    },
+    "RequirementInput": {
+        "requirements": [
+            "Axe"
+        ]
+    },
+    "InventoryInput": {
+        "itemCounts": {
+            "Woodcrafting:twig": 7,
+            "Woodcrafting:stick": 2
+        }
+    },
+    "InventoryOutput": {
+        "itemCounts": {
+            "Woodcrafting:FruitBasket": 1
+        }
+    }
+}

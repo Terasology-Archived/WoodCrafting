@@ -1,0 +1,24 @@
+{
+    "parent": "engine:iconItem",
+    "Item": {
+        "icon": "Woodcrafting:QualityWoodenBucketEmpty",
+        "stackId": "Woodcrafting:qualityWoodenBucket"
+    },
+    "DisplayName": {
+        "name": "Quality Wooden Bucket"
+    },
+    "FluidContainerItem": {
+        "volume": 10,
+        "maxVolume": 10,
+        "fluidMinPerc": [0.1875, 0.15625],
+        "fluidSizePerc": [0.625, 0.4375],
+        "textureWithHole": "Woodcrafting:QualityWoodenBucket",
+        "emptyTexture": "Woodcrafting:QualityWoodenBucketEmpty"
+    },
+    "ItemHelp": {
+        "category": "Woodcrafting",
+        "paragraphText": [
+          "A bucket made out of quality wood that can hold up to 10 liters of fluid."
+        ]
+    }
+}

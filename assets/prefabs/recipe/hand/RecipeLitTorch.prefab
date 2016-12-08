@@ -1,0 +1,27 @@
+{
+    "CraftInHandRecipe": {
+        "recipeId": "Woodcrafting:LitTorch",
+        "blockResult": "Woodcrafting:LitTorch",
+        "recipeComponents": ["1*Woodcrafting:unlitTorch"],
+        "recipeActivators": ["1*Woodcrafting:flint"]
+    },
+    "Parent": "CrudeAssemblingBaseProcessPart",
+    "ProcessDefinition": {
+        "processType": "Woodcrafting:CraftInHandProcess"
+    },
+    "RequirementInput": {
+        "requirements": [
+            "Flint"
+        ]
+    },
+    "InventoryInput": {
+        "itemCounts": {
+            "Woodcrafting:UnlitTorch": 1
+        }
+    },
+    "InventoryOutput": {
+        "blockCounts": {
+            "Woodcrafting:LitTorch": 1
+        }
+    }
+}

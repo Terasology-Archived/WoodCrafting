@@ -1,0 +1,22 @@
+{
+    "parent": "engine:iconItem",
+    "Item": {
+        "icon": "Woodcrafting:SandGrain",
+        "stackId": "Woodcrafting:sandGrain"
+    },
+    "DisplayName": {
+        "name": "Sand Grains"
+    },
+    "CraftInHandIngredient": {
+        "componentType": "Woodcrafting:sand"
+    },
+    "CraftingStationIngredient": {
+        "type": "Woodcrafting:sand"
+    },
+    "ItemHelp": {
+        "category": "Woodcrafting",
+        "paragraphText": [
+          "Several grains of sand. Can be processed into glass."
+        ]
+    }
+}

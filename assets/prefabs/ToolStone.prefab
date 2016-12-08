@@ -1,0 +1,27 @@
+{
+    "parent": "engine:iconItem",
+    "Item": {
+        "icon": "Woodcrafting:items#ToolStone"
+    },
+    "DisplayName": {
+        "name": "Tool Stone"
+    },
+    "Durability": {
+        "durability": 20,
+        "maxDurability": 20
+    },
+    "ProcessRequirementsProvider": {
+        "requirements": [
+            "ToolStone"
+        ]
+    },
+    "CraftInHandIngredient": {
+        "componentType": "Woodcrafting:toolStone"
+    },
+    "ItemHelp": {
+        "category": "Woodcrafting",
+        "paragraphText": [
+          "This crude stone can be used for crafting several other crude items and tools."
+        ]
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "Parent": "NoviceWoodcraftingBaseProcessPart",
+    "ProcessDefinition": {
+        "processType": "Woodcrafting:NoviceWoodcraftingProcess"
+    },
+    "CraftingStationRecipe": {
+        "recipeId": "Materials|Woodcrafting:Stick",
+
+        "recipeComponents": ["1*Woodcrafting:wood"],
+        "recipeTools": ["1*axe"],
+
+        "itemResult": "6*Woodcrafting:Stick"
+    },
+    "ProcessingTime": {
+        "duration": 1000
+    },
+    "RequirementInput": {
+        "requirements": [
+            "Axe"
+        ]
+    },
+    "InventoryInput": {
+        "itemCounts": {
+            "Woodcrafting:WoodLog": 1
+        }
+    },
+    "InventoryOutput": {
+        "itemCounts": {
+            "Woodcrafting:Stick": 6
+        }
+    }
+}

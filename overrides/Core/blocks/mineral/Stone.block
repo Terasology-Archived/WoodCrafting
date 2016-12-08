@@ -1,0 +1,9 @@
+{
+    "mass": 100,
+    "hardness": 8,
+    "categories": ["stone", "rock"],
+    "entity": {
+        "prefab": "Woodcrafting:StoneBlock"
+    },
+    "sounds": "Core:stone"
+}

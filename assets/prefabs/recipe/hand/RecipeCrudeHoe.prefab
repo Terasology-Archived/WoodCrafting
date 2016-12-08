@@ -1,0 +1,28 @@
+{
+    "CraftInHandRecipe": {
+        "recipeId": "Woodcrafting:CrudeHoe",
+        "itemResult": "Woodcrafting:CrudeHoe",
+        "recipeComponents": ["1*Woodcrafting:twig", "2*Woodcrafting:stick"],
+        "recipeTools": ["1*Woodcrafting:toolStone"]
+    },
+    "Parent": "CrudeAssemblingBaseProcessPart",
+    "ProcessDefinition": {
+        "processType": "Woodcrafting:CraftInHandProcess"
+    },
+    "RequirementInput": {
+        "requirements": [
+            "ToolStone"
+        ]
+    },
+    "InventoryInput": {
+        "itemCounts": {
+            "Woodcrafting:twig": 1,
+            "Woodcrafting:stick": 2
+        }
+    },
+    "InventoryOutput": {
+        "itemCounts": {
+            "Woodcrafting:CrudeHoe": 1
+        }
+    }
+}

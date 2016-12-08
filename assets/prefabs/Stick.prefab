@@ -1,0 +1,26 @@
+{
+    "parent": "engine:iconItem",
+    "Item": {
+        "icon": "Woodcrafting:items#Stick",
+        "stackId": "Woodcrafting:items#Stick"
+    },
+    "DisplayName": {
+        "name": "Stick"
+    },
+    "CraftInHandIngredient": {
+        "componentType": "Woodcrafting:stick"
+    },
+    "CraftingStationIngredient": {
+        "type": "Woodcrafting:stick"
+    },
+    "HeatFuel": {
+        "heatProvided": 300,
+        "consumeTime": 8000
+    },
+    "ItemHelp": {
+        "category": "Woodcrafting",
+        "paragraphText": [
+          "A stick retrieved from a tree branch. Used for several crude items as well as fuel for fire."
+        ]
+    }
+}

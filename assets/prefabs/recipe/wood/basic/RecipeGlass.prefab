@@ -1,0 +1,32 @@
+{
+    "Parent": "BasicWoodcraftingBaseProcessPart",
+    "ProcessDefinition": {
+        "processType": "Woodcrafting:BasicWoodcraftingProcess"
+    },
+    "CraftingStationRecipe": {
+        "recipeId": "Materials|Woodcrafting:Glass",
+
+        "recipeComponents": ["1*Woodcrafting:sand"],
+        "recipeTools": ["1*hammer"],
+
+        "itemResult": "1*Woodcrafting:Glass"
+    },
+    "ProcessingTime": {
+        "duration": 1000
+    },
+    "RequirementInput": {
+        "requirements": [
+            "Hammer"
+        ]
+    },
+    "InventoryInput": {
+        "itemCounts": {
+            "Woodcrafting:SandGrain": 1
+        }
+    },
+    "InventoryOutput": {
+        "itemCounts": {
+            "Woodcrafting:Glass": 1
+        }
+    }
+}

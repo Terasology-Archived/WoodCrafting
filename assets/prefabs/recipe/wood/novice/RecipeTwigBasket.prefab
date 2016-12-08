@@ -1,0 +1,24 @@
+{
+    "Parent": "NoviceWoodcraftingBaseProcessPart",
+    "ProcessDefinition": {
+        "processType": "Woodcrafting:NoviceWoodcraftingProcess"
+    },
+    "CraftingStationRecipe": {
+        "recipeId": "Storage|Woodcrafting:TwigBasket",
+
+        "recipeComponents": ["9*Woodcrafting:twig"],
+        "recipeTools": [],
+
+        "blockResult": "1*Woodcrafting:TwigBasket"
+    },
+    "InventoryInput": {
+        "itemCounts": {
+            "Woodcrafting:twig": 9
+        }
+    },
+    "InventoryOutput": {
+        "blockCounts": {
+            "Woodcrafting:TwigBasket": 1
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "shape": "Woodcrafting:Quern",
+
+    "rotation": "horizontal",
+
+    "categories": ["stone"],
+
+    "displayName": "Quern",
+
+    "entity": {
+        "prefab": "Woodcrafting:Quern"
+    },
+
+    "tiles": {
+        "center": "Woodcrafting:Quern"
+    },
+
+    "translucent": true
+}

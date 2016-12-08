@@ -1,0 +1,11 @@
+{
+    "texture": "Woodcrafting:journalIcons",
+    "textureSize": [256, 64],
+    "grid": {
+        "tileSize": [64, 64],
+        "gridDimensions": [4, 1],
+        "tileNames": [
+            "Woodcrafting", "FarmingAndCooking", "Mining", ""
+        ]
+    }
+}

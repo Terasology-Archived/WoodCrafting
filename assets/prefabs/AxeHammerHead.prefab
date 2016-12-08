@@ -1,0 +1,22 @@
+{
+    "parent": "engine:iconItem",
+    "Item": {
+        "icon": "Woodcrafting:items#AxeHammerHead",
+        "stackId": "Woodcrafting:items#AxeHammerHead"
+    },
+    "DisplayName": {
+        "name": "Axe-Hammer Head"
+    },
+    "CraftInHandIngredient": {
+        "componentType": "Woodcrafting:axeHammerHead"
+    },
+    "CraftingStationIngredient": {
+        "type": "Woodcrafting:axeHammerHead"
+    },
+    "ItemHelp": {
+        "category": "Woodcrafting",
+        "paragraphText": [
+          "This crude axe-hammer head can be attached to some sticks to be used as a makeshift axe-hammer."
+        ]
+    }
+}

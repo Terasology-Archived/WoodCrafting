@@ -1,0 +1,10 @@
+{
+    "BlockDropGrammar": {
+        "itemDrops": ["2|Woodcrafting:sandGrain"],
+        "droppedWithTool": {
+            "soil": {
+                blockDrops: ["1|Core:Sand"]
+            }
+        }
+    }
+}

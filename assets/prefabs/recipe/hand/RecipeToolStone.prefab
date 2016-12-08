@@ -1,0 +1,21 @@
+{
+    "CraftInHandRecipe": {
+        "recipeId": "Woodcrafting:ToolStone",
+        "itemResult": "Woodcrafting:ToolStone",
+        "recipeComponents": ["2*Woodcrafting:stone"]
+    },
+    "Parent": "CrudeAssemblingBaseProcessPart",
+    "ProcessDefinition": {
+        "processType": "Woodcrafting:CraftInHandProcess"
+    },
+    "InventoryInput": {
+        "itemCounts": {
+            "Woodcrafting:stone": 2
+        }
+    },
+    "InventoryOutput": {
+        "itemCounts": {
+            "Woodcrafting:ToolStone": 1
+        }
+    }
+}

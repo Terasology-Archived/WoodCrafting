@@ -1,0 +1,13 @@
+{
+    "Durability": {
+        "durability": 60,
+        "maxDurability": 60
+    },
+    "OverTimeDurabilityReduce": {},
+    "ItemHelp": {
+        "category": "Woodcrafting",
+        "paragraphText": [
+          "A stick with a fire lit on the other end. Illuminates the nearby world around you."
+        ]
+    }
+}

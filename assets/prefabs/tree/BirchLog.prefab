@@ -1,0 +1,15 @@
+{
+    "CraftingStationMaterial": {
+        "stationType": "Woodcrafting:BasicWoodcraftingStation"
+    },
+    "CraftingStationIngredient": {
+        "type": "Woodcrafting:wood"
+    },
+    "TreeType": {
+        "treeType": "Birch"
+    },
+    "HeatFuel": {
+        "heatProvided": 600,
+        "consumeTime": 20000
+    }
+}

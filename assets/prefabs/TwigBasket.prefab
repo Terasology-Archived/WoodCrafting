@@ -1,0 +1,25 @@
+{
+    "Inventory": {
+        "privateToOwner": false,
+        "itemSlots": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+    },
+    "AccessInventoryAction": {},
+    "DropBlockInventory": {},
+    "ItemHelp": {
+        "category": "Woodcrafting",
+        "paragraphText": [
+          "A basket made out of twigs that can store 10 items."
+        ]
+    }
+}

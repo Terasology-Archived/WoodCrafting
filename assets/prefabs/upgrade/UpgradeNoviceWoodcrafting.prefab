@@ -1,0 +1,14 @@
+{
+    "ProcessDefinition": {
+        "processType": "Crafting:UpgradeCraftingWorkstation"
+    },
+    "CraftingStationUpgradeRecipe": {
+        "stationType": "Woodcrafting:BasicWoodcraftingStation",
+        "targetStationType": "Woodcrafting:NoviceWoodcraftingStation",
+        "targetStationPrefab": "Woodcrafting:NoviceWoodcraftingStation",
+
+        "recipeComponents": ["10*Woodcrafting:plank"],
+
+        "resultBlockUri": "Woodcrafting:NoviceWoodStation"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "hardness": 6,
+
+    "displayName": "Twig Basket",
+
+    "categories": ["wood"],
+
+    "entity": {
+        "prefab": "Woodcrafting:TwigBasket"
+    },
+
+    "tiles": {
+        "sides": "Woodcrafting:TwigBasketSides",
+        "top": "Woodcrafting:TwigBasketTop",
+        "bottom": "Woodcrafting:TwigBasketBottom"
+    }
+}

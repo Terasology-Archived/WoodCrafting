@@ -1,0 +1,21 @@
+{
+    "CraftInHandRecipe": {
+        "recipeId": "Woodcrafting:ClayHearth",
+        "blockResult": "Woodcrafting:ClayHearth",
+        "recipeComponents": ["9*Woodcrafting:clay"]
+    },
+    "Parent": "CrudeAssemblingBaseProcessPart",
+    "ProcessDefinition": {
+        "processType": "Woodcrafting:CraftInHandProcess"
+    },
+    "InventoryInput": {
+        "itemCounts": {
+            "Woodcrafting:clay": 9
+        }
+    },
+    "InventoryOutput": {
+        "blockCounts": {
+            "Woodcrafting:ClayHearth": 1
+        }
+    }
+}

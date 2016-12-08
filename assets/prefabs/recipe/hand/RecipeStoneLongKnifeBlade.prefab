@@ -1,0 +1,27 @@
+{
+    "CraftInHandRecipe": {
+        "recipeId": "Woodcrafting:StoneLongKnifeBlade",
+        "itemResult": "Woodcrafting:StoneLongKnifeBlade",
+        "recipeComponents": ["2*Woodcrafting:flint"],
+        "recipeTools": ["1*Woodcrafting:toolStone"]
+    },
+    "Parent": "CrudeAssemblingBaseProcessPart",
+    "ProcessDefinition": {
+        "processType": "Woodcrafting:CraftInHandProcess"
+    },
+    "RequirementInput": {
+        "requirements": [
+            "ToolStone"
+        ]
+    },
+    "InventoryInput": {
+        "itemCounts": {
+            "Woodcrafting:flint": 2
+        }
+    },
+    "InventoryOutput": {
+        "itemCounts": {
+            "Woodcrafting:StoneLongKnifeBlade": 1
+        }
+    }
+}

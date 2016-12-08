@@ -1,0 +1,19 @@
+{
+    "shape": "Woodcrafting:Table",
+    "categories": ["wood"],
+
+    "displayName": "Wooden Table",
+
+    "entity": {
+        "prefab": "Woodcrafting:WoodenTable"
+    },
+
+    "tiles": {
+        "top": "Woodcrafting:WoodenTableTop",
+        "bottom": "Woodcrafting:WoodenTableBottom",
+        "sides": "Woodcrafting:WoodenTableSides",
+        "center": "Woodcrafting:WoodenTableSides"
+    },
+
+    "translucent": true
+}

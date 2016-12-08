@@ -1,0 +1,27 @@
+{
+    "parent": "engine:iconItem",
+    "Item": {
+        "icon": "Woodcrafting:items#Clay",
+        "stackId": "Woodcrafting:items#Clay"
+    },
+    "DisplayName": {
+        "name": "Clay"
+    },
+    "CraftingStationIngredient": {
+        "type": "Woodcrafting:clay"
+    },
+    "CraftInHandIngredient": {
+        "componentType": "Woodcrafting:clay"
+    },
+    "HeatProcessed": {
+        "heatRequired": 500,
+        "processingTime": 3000,
+        "itemResult": "1*Woodcrafting:Brick"
+    },
+    "ItemHelp": {
+        "category": "Woodcrafting",
+        "paragraphText": [
+          "A fine-grained natural rock or soil that combines one or more clay minerals with traces of metal oxides and organic matter."
+        ]
+    }
+}

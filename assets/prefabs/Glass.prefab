@@ -1,0 +1,22 @@
+{
+    "parent": "engine:iconItem",
+    "Item": {
+        "icon": "Woodcrafting:GlassShard",
+        "stackId": "Woodcrafting:glass"
+    },
+    "DisplayName": {
+        "name": "Glass Shard"
+    },
+    "CraftInHandIngredient": {
+        "componentType": "Woodcrafting:glass"
+    },
+    "CraftingStationIngredient": {
+        "type": "Woodcrafting:glass"
+    },
+    "ItemHelp": {
+        "category": "Woodcrafting",
+        "paragraphText": [
+          "A transparent solid that is used in the construction of many items."
+        ]
+    }
+}

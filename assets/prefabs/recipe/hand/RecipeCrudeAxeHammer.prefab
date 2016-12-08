@@ -1,0 +1,23 @@
+{
+    "CraftInHandRecipe": {
+        "recipeId": "Woodcrafting:CrudeAxeHammer",
+        "itemResult": "Woodcrafting:CrudeAxeHammer",
+        "recipeComponents": ["1*Woodcrafting:axeHammerHead", "1*Woodcrafting:twig", "1*Woodcrafting:stick"]
+    },
+    "Parent": "CrudeAssemblingBaseProcessPart",
+    "ProcessDefinition": {
+        "processType": "Woodcrafting:CraftInHandProcess"
+    },
+    "InventoryInput": {
+        "itemCounts": {
+            "Woodcrafting:axeHammerHead": 1,
+            "Woodcrafting:twig": 1,
+            "Woodcrafting:stick": 1
+        }
+    },
+    "InventoryOutput": {
+        "itemCounts": {
+            "Woodcrafting:CrudeAxeHammer": 1
+        }
+    }
+}

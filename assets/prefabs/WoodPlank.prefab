@@ -1,0 +1,19 @@
+{
+    "parent": "engine:iconItem",
+    "Item": {
+        "icon": "Woodcrafting:items#WoodPlank",
+        "stackId": "Woodcrafting:items#WoodPlank"
+    },
+    "DisplayName" : {
+        "name" : "Plank"
+    },
+    "CraftingStationIngredient": {
+        "type": "Woodcrafting:plank"
+    },
+    "ItemHelp": {
+        "category": "Woodcrafting",
+        "paragraphText": [
+          "A plank made by sawing logs. One of the building blocks of many wood furniture and structures."
+        ]
+    }
+}

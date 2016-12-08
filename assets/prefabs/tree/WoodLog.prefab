@@ -1,0 +1,24 @@
+{
+    "DisplayName": {
+        "name": "Generic Wood Log"
+    },
+    "CraftingStationMaterial": {
+        "stationType": "Woodcrafting:BasicWoodcraftingStation"
+    },
+    "CraftingStationIngredient": {
+        "type": "Woodcrafting:wood"
+    },
+    "TreeType": {
+        "treeType": "Generic"
+    },
+    "HeatFuel": {
+        "heatProvided": 600,
+        "consumeTime": 20000
+    },
+    "ItemHelp": {
+        "category": "Woodcrafting",
+        "paragraphText": [
+          "A log of wood cut from a tree. Note that this is a stand-in for any regular wood log."
+        ]
+    }
+}

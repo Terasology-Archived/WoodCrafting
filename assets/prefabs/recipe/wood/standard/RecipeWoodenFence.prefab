@@ -1,0 +1,31 @@
+{
+    "ProcessDefinition": {
+        "processType": "Woodcrafting:StandardWoodcraftingProcess"
+    },
+    "CraftingStationRecipe": {
+        "recipeId": "Building|Woodcrafting:WoodenFence",
+
+        "recipeComponents": ["4*Woodcrafting:plank"],
+        "recipeTools": ["1*axe", "1*hammer"],
+
+        "blockResult": "8*Fences:Fence"
+    },
+    "ProcessingTime": {
+        "duration": 1000
+    },
+    "RequirementInput": {
+        "requirements": [
+            "Axe", "Hammer"
+        ]
+    },
+    "InventoryInput": {
+        "itemCounts": {
+            "Woodcrafting:WoodPlank": 4
+        }
+    },
+    "InventoryOutput": {
+        "blockCounts": {
+            "Fences:Fence": 8
+        }
+    }
+}

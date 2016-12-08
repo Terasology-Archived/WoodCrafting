@@ -1,0 +1,18 @@
+{
+    "parent": "engine:iconItem",
+    "Item": {
+        "icon": "Woodcrafting:items#StoneKnifeBlade"
+    },
+    "DisplayName": {
+        "name": "Stone Knife Blade"
+    },
+    "CraftInHandIngredient": {
+        "componentType": "Woodcrafting:stoneKnifeBlade"
+    },
+    "ItemHelp": {
+        "category": "Woodcrafting",
+        "paragraphText": [
+          "The blade of a stone knife. Required for making the knife."
+        ]
+    }
+}

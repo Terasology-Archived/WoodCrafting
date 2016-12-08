@@ -1,0 +1,32 @@
+{
+    "ProcessDefinition": {
+        "processType": "Woodcrafting:StandardWoodcraftingProcess"
+    },
+    "CraftingStationRecipe": {
+        "recipeId": "Building|Woodcrafting:WoodenTable",
+
+        "recipeComponents": ["4*Woodcrafting:plank", "4*Woodcrafting:stick"],
+        "recipeTools": ["1*axe", "1*hammer"],
+
+        "blockResult": "1*Woodcrafting:WoodenTable"
+    },
+    "ProcessingTime": {
+        "duration": 1000
+    },
+    "RequirementInput": {
+        "requirements": [
+            "Axe", "Hammer"
+        ]
+    },
+    "InventoryInput": {
+        "itemCounts": {
+            "Woodcrafting:WoodPlank": 4,
+            "Woodcrafting:stick": 4
+        }
+    },
+    "InventoryOutput": {
+        "blockCounts": {
+            "Woodcrafting:WoodenTable": 1
+        }
+    }
+}

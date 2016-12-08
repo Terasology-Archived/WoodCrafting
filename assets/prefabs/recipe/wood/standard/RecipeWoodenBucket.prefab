@@ -1,0 +1,32 @@
+{
+    "ProcessDefinition": {
+        "processType": "Woodcrafting:StandardWoodcraftingProcess"
+    },
+    "CraftingStationRecipe": {
+        "recipeId": "Building|Woodcrafting:WoodenBucket",
+
+        "recipeComponents": ["2*Woodcrafting:plank", "1*Woodcrafting:twig"],
+        "recipeTools": ["1*axe", "1*hammer"],
+
+        "itemResult": "1*Woodcrafting:WoodenBucket"
+    },
+    "ProcessingTime": {
+        "duration": 1000
+    },
+    "RequirementInput": {
+        "requirements": [
+            "Axe", "Hammer"
+        ]
+    },
+    "InventoryInput": {
+        "itemCounts": {
+            "Woodcrafting:WoodPlank": 2,
+            "Woodcrafting:twig": 1
+        }
+    },
+    "InventoryOutput": {
+        "itemCounts": {
+            "Woodcrafting:WoodenBucket": 1
+        }
+    }
+}

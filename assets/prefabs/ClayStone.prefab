@@ -1,0 +1,11 @@
+{
+    "BlockDropGrammar": {
+        "itemDrops": ["2-3*Woodcrafting:Clay"]
+    },
+    "ItemHelp": {
+        "category": "Woodcrafting",
+        "paragraphText": [
+          "A rock containing pieces of clay."
+        ]
+    }
+}

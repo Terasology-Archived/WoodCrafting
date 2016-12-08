@@ -1,0 +1,22 @@
+{
+    "parent": "engine:iconItem",
+    "Item": {
+        "icon": "Woodcrafting:items#Stone",
+        "stackId": "Woodcrafting:items#Stone"
+    },
+    "DisplayName": {
+        "name": "Stone"
+    },
+    "CraftInHandIngredient": {
+        "componentType": "Woodcrafting:stone"
+    },
+    "CraftingStationIngredient": {
+        "type": "Woodcrafting:stone"
+    },
+    "ItemHelp": {
+        "category": "Woodcrafting",
+        "paragraphText": [
+          "A common stone found on the ground."
+        ]
+    }
+}

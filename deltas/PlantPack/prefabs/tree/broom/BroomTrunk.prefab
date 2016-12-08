@@ -1,0 +1,6 @@
+{
+    "BlockDropGrammar": {
+        "blockDrops": ["1-2*Woodcrafting:BroomLog"],
+        "itemDrops": ["0.1|Woodcrafting:Resin"]
+    }
+}

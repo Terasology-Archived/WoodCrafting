@@ -1,0 +1,30 @@
+{
+    "parent": "engine:iconItem",
+    "Item": {
+        "icon": "Woodcrafting:items#StoneKnife"
+    },
+    "DisplayName": {
+        "name": "Stone Knife"
+    },
+    "Durability": {
+        "durability": 100,
+        "maxDurability": 100
+    },
+    "ProcessRequirementsProvider": {
+        "requirements": [
+            "Knife"
+        ]
+    },
+    "CraftingStationTool": {
+        "type": ["knife"]
+    },
+    "CraftInHandIngredient": {
+        "componentType": "Woodcrafting:knife"
+    },
+    "ItemHelp": {
+        "category": "Woodcrafting",
+        "paragraphText": [
+          "A small knife that can be used for cutting things."
+        ]
+    }
+}

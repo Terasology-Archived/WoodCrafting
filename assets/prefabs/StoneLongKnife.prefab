@@ -1,0 +1,30 @@
+{
+    "parent": "engine:iconItem",
+    "Item": {
+        "icon": "Woodcrafting:StoneLongKnife"
+    },
+    "DisplayName": {
+        "name": "Stone Long Knife"
+    },
+    "Durability": {
+        "durability": 120,
+        "maxDurability": 120
+    },
+    "ProcessRequirementsProvider": {
+        "requirements": [
+            "Knife"
+        ]
+    },
+    "CraftingStationTool": {
+        "type": ["knife"]
+    },
+    "CraftInHandIngredient": {
+        "componentType": "Woodcrafting:knife"
+    },
+    "ItemHelp": {
+        "category": "Woodcrafting",
+        "paragraphText": [
+          "A long knife that can be used for cutting things"
+        ]
+    }
+}

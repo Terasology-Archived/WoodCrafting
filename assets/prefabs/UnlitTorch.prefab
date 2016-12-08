@@ -1,0 +1,19 @@
+{
+    "parent": "engine:iconItem",
+    "Item": {
+        "icon": "Woodcrafting:items#UnlitTorch",
+        "stackId": "Woodcrafting:items#UnlitTorch"
+    },
+    "DisplayName": {
+        "name": "Unlit Torch"
+    },
+    "CraftInHandIngredient": {
+        "componentType": "Woodcrafting:unlitTorch"
+    },
+    "ItemHelp": {
+        "category": "Woodcrafting",
+        "paragraphText": [
+          "A stick with some flammable substance attached on the other end. Can be ignited using flint or a lighter."
+        ]
+    }
+}

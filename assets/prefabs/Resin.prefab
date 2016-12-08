@@ -1,0 +1,27 @@
+{
+    "parent": "engine:iconItem",
+    "Item": {
+        "icon": "Woodcrafting:items#Resin"
+    },
+    "DisplayName": {
+        "name": "Resin"
+    },
+    "Durability": {
+        "durability": 20,
+        "maxDurability": 20
+    },
+    "ProcessRequirementsProvider": {
+        "requirements": [
+            "Resin"
+        ]
+    },
+    "CraftInHandIngredient": {
+        "componentType": "Woodcrafting:resin"
+    },
+    "ItemHelp": {
+        "category": "Woodcrafting",
+        "paragraphText": [
+          "A sticky organic substance usable for sticking crude stuff together."
+        ]
+    }
+}

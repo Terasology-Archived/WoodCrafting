@@ -1,0 +1,28 @@
+{
+    "parent": "engine:iconItem",
+    "Item": {
+        "icon": "Woodcrafting:items#crudeAxeHammer",
+        "damageType": "axeHammerDamage"
+    },
+    "DisplayName": {
+        "name": "Crude Axe-Hammer"
+    },
+    "Durability": {
+        "durability": 20,
+        "maxDurability": 20
+    },
+    "ProcessRequirementsProvider": {
+        "requirements": [
+            "Axe", "Hammer"
+        ]
+    },
+    "CraftingStationTool": {
+        "type": ["axe", "hammer"]
+    },
+    "ItemHelp": {
+        "category": "Woodcrafting",
+        "paragraphText": [
+          "The crude axe-hammmer can be used as an axe or hammer. However, it's not very durable."
+        ]
+    }
+}

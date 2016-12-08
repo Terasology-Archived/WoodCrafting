@@ -1,0 +1,14 @@
+{
+    "hardness": 6,
+
+    "displayName": "Basic Woodworking Station",
+
+    "categories": ["wood"],
+
+    "tiles": {
+        "top": "Woodcrafting:BasicWoodStationTop",
+        "bottom": "Woodcrafting:BasicWoodStationBottom",
+        "sides": "Woodcrafting:BasicWoodStationSides"
+    }
+
+}

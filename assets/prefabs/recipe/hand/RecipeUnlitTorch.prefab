@@ -1,0 +1,27 @@
+{
+    "CraftInHandRecipe": {
+        "recipeId": "Woodcrafting:UnlitTorch",
+        "itemResult": "Woodcrafting:UnlitTorch",
+        "recipeComponents": ["1*Woodcrafting:stick"],
+        "recipeTools": ["1*Woodcrafting:resin"]
+    },
+    "Parent": "CrudeAssemblingBaseProcessPart",
+    "ProcessDefinition": {
+        "processType": "Woodcrafting:CraftInHandProcess"
+    },
+    "RequirementInput": {
+        "requirements": [
+            "Resin"
+        ]
+    },
+    "InventoryInput": {
+        "itemCounts": {
+            "Woodcrafting:stick": 1
+        }
+    },
+    "InventoryOutput": {
+        "itemCounts": {
+            "Woodcrafting:UnlitTorch": 1
+        }
+    }
+}

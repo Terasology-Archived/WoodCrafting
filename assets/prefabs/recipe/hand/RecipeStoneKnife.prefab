@@ -1,0 +1,23 @@
+{
+    "CraftInHandRecipe": {
+        "recipeId": "Woodcrafting:StoneKnife",
+        "itemResult": "Woodcrafting:StoneKnife",
+        "recipeComponents": ["1*Woodcrafting:stoneKnifeBlade", "1*Woodcrafting:twig", "1*Woodcrafting:stick"]
+    },
+    "Parent": "CrudeAssemblingBaseProcessPart",
+    "ProcessDefinition": {
+        "processType": "Woodcrafting:CraftInHandProcess"
+    },
+    "InventoryInput": {
+        "itemCounts": {
+            "Woodcrafting:stoneKnifeBlade": 1,
+            "Woodcrafting:twig": 1,
+            "Woodcrafting:stick": 1
+        }
+    },
+    "InventoryOutput": {
+        "itemCounts": {
+            "Woodcrafting:StoneKnife": 1
+        }
+    }
+}
