@@ -30,10 +30,6 @@
                 "minVersion" : "1.0.0"
             },
             {
-                "id" : "Fluid",
-                "minVersion" : "1.0.0"
-            },
-            {
                 "id" : "GrowingFlora",
                 "minVersion" : "0.1.0"
             },
@@ -48,6 +44,14 @@
             {
                 "id" : "AnotherWorld",
                 "minVersion" : "0.2.0"
+            },
+            {
+                "id" : "AnotherWorldPlants",
+                "minVersion" : "0.1.0"
+            },
+            {
+                "id" : "StructuralResources",
+                "minVersion" : "1.0.0"
             }
     ],
     "serverSideOnly" : false
