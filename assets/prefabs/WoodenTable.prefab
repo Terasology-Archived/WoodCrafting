@@ -1,6 +1,6 @@
 {
     "CraftingStationMaterial": {
-        "stationType": "Woodcrafting:BasicStonecraftingStation"
+        "stationType": "Stonecrafting:BasicStonecraftingStation"
     },
     "ItemHelp": {
         "category": "Woodcrafting",

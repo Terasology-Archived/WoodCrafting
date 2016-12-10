@@ -1,4 +1,7 @@
 {
+    "Item": {
+        "icon": "PlantPack:PineTrunk"
+    },
     "DisplayName": {
         "name": "Generic Wood Log"
     },

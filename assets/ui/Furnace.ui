@@ -1,6 +1,6 @@
 {
     "type": "FurnaceWindow",
-    "skin": "WoodAndStone:CraftingStation",
+    "skin": "WorkstationCrafting:CraftingStation",
     "contents": {
         "type": "relativeLayout",
         "contents": [
