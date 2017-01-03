@@ -16,6 +16,7 @@
 package org.terasology.woodCrafting.system;
 
 import com.google.common.base.Predicate;
+import org.terasology.entitySystem.entity.EntityManager;
 import org.terasology.entitySystem.entity.EntityRef;
 import org.terasology.entitySystem.prefab.Prefab;
 import org.terasology.entitySystem.prefab.PrefabManager;
@@ -61,6 +62,8 @@ public class RegisterWoodcraftingRecipes extends BaseComponentSystem {
     private BlockManager blockManager;
     @In
     private PrefabManager prefabManager;
+    @In
+    private EntityManager entityManager;
 
     @Override
     public void initialise() {
@@ -81,13 +84,13 @@ public class RegisterWoodcraftingRecipes extends BaseComponentSystem {
     }
 
     private void addWoodPlankRecipes() {
-        workstationRegistry.registerProcess(Woodcrafting.BASIC_WOODCRAFTING_PROCESS_TYPE,
-                new CraftingWorkstationProcess(Woodcrafting.BASIC_WOODCRAFTING_PROCESS_TYPE, "Materials|Woodcrafting:WoodPlank",
-                        new PlankRecipe(2)));
+        workstationRegistry.registerProcess(Woodcrafting.BASIC_WOODCRAFTING_PROCESS,
+                new CraftingWorkstationProcess(Woodcrafting.BASIC_WOODCRAFTING_PROCESS, "Materials|Woodcrafting:WoodPlank",
+                        new PlankRecipe(2), null, entityManager));
 
-        workstationRegistry.registerProcess(Woodcrafting.ADVANCED_WOODCRAFTING_PROCESS_TYPE,
-                new CraftingWorkstationProcess(Woodcrafting.ADVANCED_WOODCRAFTING_PROCESS_TYPE, "Materials|Woodcrafting:WoodPlank",
-                        new PlankRecipe(3)));
+        workstationRegistry.registerProcess(Woodcrafting.ADVANCED_WOODCRAFTING_PROCESS,
+                new CraftingWorkstationProcess(Woodcrafting.ADVANCED_WOODCRAFTING_PROCESS, "Materials|Woodcrafting:WoodPlank",
+                        new PlankRecipe(3), null, entityManager));
     }
 
     private void addWorkstationFormingRecipes() {
@@ -100,7 +103,7 @@ public class RegisterWoodcraftingRecipes extends BaseComponentSystem {
 
     private void addStandardWoodWorkstationBlockShapeRecipes() {
         addPlankBlockRecipes();
-        addWorkstationBlockShapesRecipe(Woodcrafting.ADVANCED_WOODCRAFTING_PROCESS_TYPE, "Building|Fine Planks|Woodcrafting:FinePlankBlock",
+        addWorkstationBlockShapesRecipe(Woodcrafting.ADVANCED_WOODCRAFTING_PROCESS, "Building|Fine Planks|Woodcrafting:FinePlankBlock",
                 "Woodcrafting:plank", 4, "hammer", 1, "Woodcrafting:FinePlank", 1);
     }
 
@@ -119,9 +122,9 @@ public class RegisterWoodcraftingRecipes extends BaseComponentSystem {
             resultShape = module + ":" + shape;
         }
 
-        workstationRegistry.registerProcess(Woodcrafting.ADVANCED_WOODCRAFTING_PROCESS_TYPE,
-                new CraftingWorkstationProcess(Woodcrafting.ADVANCED_WOODCRAFTING_PROCESS_TYPE, recipeName,
-                        new PlankBlockRecipe(2 * ingredientMultiplier, durabilityMultiplier, resultShape, 4 * resultMultiplier)));
+        workstationRegistry.registerProcess(Woodcrafting.ADVANCED_WOODCRAFTING_PROCESS,
+                new CraftingWorkstationProcess(Woodcrafting.ADVANCED_WOODCRAFTING_PROCESS, recipeName,
+                        new PlankBlockRecipe(2 * ingredientMultiplier, durabilityMultiplier, resultShape, 4 * resultMultiplier), null, entityManager));
     }
 
     private void addPlankBlockRecipes() {
@@ -169,7 +172,7 @@ public class RegisterWoodcraftingRecipes extends BaseComponentSystem {
         shapeRecipe.setResultFactory(new BlockRecipeResultFactory(blockManager.getBlockFamily(blockResultPrefix + ":" + module + ":" + shape).getArchetypeBlock(),
                 blockResultCount * resultMultiplier));
 
-        workstationRegistry.registerProcess(processType, new CraftingWorkstationProcess(processType, recipeNamePrefix + shape, shapeRecipe));
+        workstationRegistry.registerProcess(processType, new CraftingWorkstationProcess(processType, recipeNamePrefix + shape, shapeRecipe, null, entityManager));
     }
 
     private void addWorkstationBlockShapesRecipe(String processType, String recipeNamePrefix, String ingredient, int ingredientBasicCount,
@@ -179,7 +182,7 @@ public class RegisterWoodcraftingRecipes extends BaseComponentSystem {
         fullBlockRecipe.addRequiredTool(tool, toolDurability);
         fullBlockRecipe.setResultFactory(new BlockRecipeResultFactory(blockManager.getBlockFamily(blockResultPrefix).getArchetypeBlock(), blockResultCount));
 
-        workstationRegistry.registerProcess(processType, new CraftingWorkstationProcess(processType, recipeNamePrefix, fullBlockRecipe));
+        workstationRegistry.registerProcess(processType, new CraftingWorkstationProcess(processType, recipeNamePrefix, fullBlockRecipe, null, entityManager));
 
         addShapeRecipe(processType, recipeNamePrefix, ingredient, ingredientBasicCount, tool, toolDurability, blockResultPrefix, blockResultCount,
                 "Stair", 3, 4, 2);
