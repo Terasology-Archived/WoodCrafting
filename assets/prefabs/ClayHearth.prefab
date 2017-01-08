@@ -49,6 +49,7 @@
         "waitBeforeRegen": 2,
         "destroyEntityOnNoHealth": true
     },
+    "Network": {},
     "DropBlockInventory": {},
     "ItemHelp": {
         "category": "Woodcrafting",
