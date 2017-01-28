@@ -1,4 +1,5 @@
 {
+    "Network": {},
     "Inventory": {
         "privateToOwner": false,
         "itemSlots": [
@@ -16,6 +17,13 @@
     },
     "AccessInventoryAction": {},
     "DropBlockInventory": {},
+    "PlaySoundAction": {
+        "sounds": "engine:click"
+    },
+    "InteractionTarget": {},
+    "InteractionScreen": {
+        "screen": "core:containerScreen"
+    },
     "ItemHelp": {
         "category": "Woodcrafting",
         "paragraphText": [

@@ -2,6 +2,7 @@
     "DisplayName": {
         "name": "Basic Woodcrafting Station"
     },
+    "Network": {},
     "BlockDropGrammar": {
         "itemDrops": ["4*Woodcrafting:WoodPlank"]
     },
