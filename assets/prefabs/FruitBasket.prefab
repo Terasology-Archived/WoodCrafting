@@ -6,6 +6,7 @@
     "DisplayName": {
         "name": "Simple Basket"
     },
+    "Network": {},
     "Inventory": {
         "privateToOwner": false,
         "itemSlots": [
@@ -20,6 +21,10 @@
         ]
     },
     "AccessInventoryAction": {},
+    "InteractionTarget": {},
+    "InteractionScreen": {
+        "screen": "core:containerScreen"
+    },
     "ItemHelp": {
         "category": "Woodcrafting",
         "paragraphText": [

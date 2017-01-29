@@ -2,6 +2,7 @@
     "DisplayName": {
         "name": "Novice Woodcrafting Station"
     },
+    "Network": {},
     "BlockDropGrammar": {
         "itemDrops": ["10*Woodcrafting:WoodPlank"]
     },
