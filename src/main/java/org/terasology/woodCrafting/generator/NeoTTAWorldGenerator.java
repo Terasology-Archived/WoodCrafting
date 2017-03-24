@@ -78,8 +78,8 @@ public class NeoTTAWorldGenerator extends BaseFacetedWorldGenerator {
     private List<FeatureGenerator> featureGenerators = new LinkedList<>();
     private List<FacetProvider> facetProviders = new LinkedList<>();
     
-    private int seaLevel = 32;
-    private int maxLevel = 220;
+    private int seaLevel = 1700;
+    private int maxLevel = 4000;
     private float biomeDiversity = 0.5f;
     
     private Function<Float, Float> temperatureFunction = IdentityAlphaFunction.singleton();
@@ -193,8 +193,8 @@ public class NeoTTAWorldGenerator extends BaseFacetedWorldGenerator {
     }
 
     protected void setupGenerator() {
-        int seaLevel = 1700;
-        int maxLevel = 4000;
+        seaLevel = 1700;
+        maxLevel = 4000;
 
         setSeaLevel(seaLevel);
         setMaxLevel(maxLevel);
