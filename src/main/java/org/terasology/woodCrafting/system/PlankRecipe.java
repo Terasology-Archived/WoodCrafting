@@ -33,6 +33,9 @@ import org.terasology.workstationCrafting.system.recipe.workstation.CraftingStat
 
 import java.util.List;
 
+/**
+ * This class represents the recipe used to craft planks.
+ */
 public class PlankRecipe extends AbstractWorkstationRecipe {
     public PlankRecipe(int plankCount) {
         Predicate<EntityRef> woodPredicate = new CraftingStationIngredientPredicate("Woodcrafting:wood");

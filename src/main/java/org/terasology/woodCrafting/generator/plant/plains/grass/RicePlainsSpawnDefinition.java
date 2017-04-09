@@ -25,6 +25,9 @@ import org.terasology.world.generator.plugin.RegisterPlugin;
 
 import java.util.Arrays;
 
+/**
+ * Defines properties of rice plains pertaining to generation.
+ */
 @RegisterPlugin
 public class RicePlainsSpawnDefinition extends GrowthBasedPlantSpawnDefinition {
     public RicePlainsSpawnDefinition() {

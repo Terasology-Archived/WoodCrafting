@@ -27,6 +27,9 @@ import org.terasology.world.generator.plugin.RegisterPlugin;
 
 import java.util.Arrays;
 
+/**
+ * Defines properties of grass plains pertaining to generation.
+ */
 @RegisterPlugin
 public class GrassPlainsSpawnDefinition extends StaticBlockFloraSpawnDefinition {
     public GrassPlainsSpawnDefinition() {

@@ -35,6 +35,9 @@ import org.terasology.workstation.process.WorkstationInventoryUtils;
 
 import java.util.List;
 
+/**
+ * The window used to interact with furnaces.
+ */
 public class FurnaceWindow extends BaseInteractionScreen {
     private InventoryGrid input;
     private InventoryGrid fuel;
@@ -43,6 +46,9 @@ public class FurnaceWindow extends BaseInteractionScreen {
     private VerticalTextureProgressWidget burn;
     private UILoadBar craftingProgress;
 
+    /**
+     * Initialize variables required by the window.
+     */
     @Override
     public void initialise() {
         input = find("input", InventoryGrid.class);
@@ -62,6 +68,11 @@ public class FurnaceWindow extends BaseInteractionScreen {
         burn.setMaxY(4);
     }
 
+    /**
+     * Initialize variables required by the window with a given workstation as the interaction target.
+     *
+     * @param workstation The workstation to be used as an interaction target
+     */
     @Override
     protected void initializeWithInteractionTarget(final EntityRef workstation) {
         WorkstationScreenUtils.setupInventoryGrid(workstation, input, "INPUT");
@@ -155,6 +166,11 @@ public class FurnaceWindow extends BaseInteractionScreen {
         );
     }
 
+    /**
+     * Check if the window is modal. Returns false.
+     *
+     * @return Whether the window is modal. In this case, the method always returns false.
+     */
     @Override
     public boolean isModal() {
         return false;

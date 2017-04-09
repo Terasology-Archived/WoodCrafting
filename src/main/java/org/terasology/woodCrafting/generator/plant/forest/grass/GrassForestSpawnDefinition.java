@@ -27,6 +27,9 @@ import org.terasology.world.generator.plugin.RegisterPlugin;
 
 import java.util.Arrays;
 
+/**
+ * Defines the basic properties of grass forests pertaining to generation.
+ */
 @RegisterPlugin
 public class GrassForestSpawnDefinition extends StaticBlockFloraSpawnDefinition {
     public GrassForestSpawnDefinition() {
