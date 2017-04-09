@@ -25,6 +25,9 @@ import org.terasology.world.generator.plugin.RegisterPlugin;
 
 import java.util.Arrays;
 
+/**
+ * Defines properties of corn plains pertaining to generation.
+ */
 @RegisterPlugin
 public class CornPlainsSpawnDefinition extends GrowthBasedPlantSpawnDefinition {
     public CornPlainsSpawnDefinition() {

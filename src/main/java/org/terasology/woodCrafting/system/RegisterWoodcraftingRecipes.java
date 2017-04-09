@@ -50,6 +50,9 @@ import org.terasology.workstationCrafting.system.recipe.render.result.ItemRecipe
 import org.terasology.workstationCrafting.system.recipe.workstation.DefaultWorkstationRecipe;
 import org.terasology.world.block.BlockManager;
 
+/**
+ * Utility class used to register workstation crafting recipes.
+ */
 @RegisterSystem
 public class RegisterWoodcraftingRecipes extends BaseComponentSystem {
     @In
@@ -65,6 +68,9 @@ public class RegisterWoodcraftingRecipes extends BaseComponentSystem {
     @In
     private EntityManager entityManager;
 
+    /**
+     * Initialize the component system used to register crafting recipes.
+     */
     @Override
     public void initialise() {
         workstationRegistry.registerProcessFactory(Woodcrafting.BASIC_WOODCRAFTING_PROCESS_TYPE, new CraftingWorkstationProcessFactory());
