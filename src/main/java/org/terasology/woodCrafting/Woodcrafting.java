@@ -17,11 +17,11 @@ package org.terasology.woodCrafting;
 
 public final class Woodcrafting {
     public static final String BASIC_WOODCRAFTING_PROCESS_TYPE = "Woodcrafting:BasicWoodcrafting";
-    public static final String BASIC_WOODCRAFTING_PROCESS = "Woodcrafting:BasicWoodcraftingProcess";
+    public static final String BASIC_WOODCRAFTING_PROCESS = "WoodCrafting:BasicWoodcraftingProcess";
     public static final String NOVICE_WOODCRAFTING_PROCESS_TYPE = "Woodcrafting:NoviceWoodcrafting";
-    public static final String NOVICE_WOODCRAFTING_PROCESS = "Woodcrafting:NoviceWoodcraftingProcess";
+    public static final String NOVICE_WOODCRAFTING_PROCESS = "WoodCrafting:NoviceWoodcraftingProcess";
     public static final String ADVANCED_WOODCRAFTING_PROCESS_TYPE = "Woodcrafting:StandardWoodcrafting";
-    public static final String ADVANCED_WOODCRAFTING_PROCESS = "Woodcrafting:StandardWoodcraftingProcess";
+    public static final String ADVANCED_WOODCRAFTING_PROCESS = "WoodCrafting:StandardWoodcraftingProcess";
 
     private Woodcrafting() {
     }

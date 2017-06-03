@@ -12,7 +12,7 @@
     },
     "Workstation": {
         "supportedProcessTypes": {
-            "Woodcrafting:BasicWoodcraftingProcess": false,
+            "WoodCrafting:BasicWoodcraftingProcess": false,
             "Crafting:UpgradeCraftingWorkstation": false
         }
     },

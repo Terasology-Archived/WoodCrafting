@@ -1,7 +1,7 @@
 {
     "Parent": "NoviceWoodcraftingBaseProcessPart",
     "ProcessDefinition": {
-        "processType": "Woodcrafting:NoviceWoodcraftingProcess"
+        "processType": "WoodCrafting:NoviceWoodcraftingProcess"
     },
     "CraftingStationRecipe": {
         "recipeId": "Storage|Woodcrafting:TwigBasket",

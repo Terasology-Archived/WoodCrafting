@@ -7,7 +7,7 @@
     },
     "Parent": "CrudeAssemblingBaseProcessPart",
     "ProcessDefinition": {
-        "processType": "Woodcrafting:CraftInHandProcess"
+        "processType": "WoodCrafting:CraftInHandProcess"
     },
     "RequirementInput": {
         "requirements": [

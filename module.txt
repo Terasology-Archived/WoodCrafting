@@ -1,8 +1,8 @@
 {
     "id" : "WoodCrafting",
-    "version" : "1.0.1-SNAPSHOT",
+    "version" : "1.0.2-SNAPSHOT",
     "author" : "XTariq",
-    "displayName" : "WoodCrafting",
+    "displayName" : "Woodcrafting",
     "description" : "Module that introduces crafting of several wood-based items through workstations. This module relies on the use of the NeoTTA world generator",
     "dependencies" : [
             {
@@ -10,12 +10,8 @@
                 "minVersion": "1.0.0"
             },
             {
-                "id": "InGameHelp",
-                "minVersion": "1.0.0"
-            },
-            {
-                "id": "WorkstationInGameHelp",
-                "minVersion": "1.0.0"
+                "id": "InGameHelpAPI",
+                "minVersion": "0.1.0"
             },
             {
                 "id" : "WorkstationCrafting",

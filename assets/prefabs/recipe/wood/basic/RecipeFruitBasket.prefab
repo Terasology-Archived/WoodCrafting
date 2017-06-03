@@ -1,7 +1,7 @@
 {
     "Parent": "BasicWoodcraftingBaseProcessPart",
     "ProcessDefinition": {
-        "processType": "Woodcrafting:BasicWoodcraftingProcess"
+        "processType": "WoodCrafting:BasicWoodcraftingProcess"
     },
     "CraftingStationRecipe": {
         "recipeId": "Storage|Woodcrafting:FruitBasket",

@@ -18,7 +18,7 @@ package org.terasology.woodCrafting.help;
 import org.terasology.entitySystem.systems.BaseComponentSystem;
 import org.terasology.entitySystem.systems.RegisterSystem;
 import org.terasology.entitySystem.systems.UpdateSubscriberSystem;
-import org.terasology.inGameHelp.event.OnAddNewCategoryEvent;
+import org.terasology.inGameHelpAPI.event.OnAddNewCategoryEvent;
 import org.terasology.logic.players.LocalPlayer;
 import org.terasology.registry.CoreRegistry;
 
@@ -34,6 +34,7 @@ public class WoodcraftingInGameHelpCommonSystem extends BaseComponentSystem impl
     @Override
     public void update(float delta) {
         if (!hasSent) {
+            // Create the category pertaining to this module and send it to other modules through OnAddNewCategoryEvent.
             CoreRegistry.get(LocalPlayer.class).getClientEntity().send(new OnAddNewCategoryEvent(new WoodcraftingCategory()));
             hasSent = true;
         }
