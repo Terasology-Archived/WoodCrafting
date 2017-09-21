@@ -6,8 +6,16 @@
     },
     "Workstation": {
         "supportedProcessTypes": {
-            "Machines:Heater": true,
-            "Machines:Furnace": true
+            "Machines:Heater" : {
+                "processName": "Machines:Heater",
+                "processLevel": 10,
+                "isAutomatic": false
+            },
+            "Machines:Furnace" : {
+                "processName": "Machines:Furnace",
+                "processLevel": 10,
+                "isAutomatic": false
+            }
         }
     },
     "WorkstationInventory": {

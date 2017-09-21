@@ -12,10 +12,26 @@
     },
     "Workstation": {
         "supportedProcessTypes": {
-            "WoodCrafting:BasicWoodcraftingProcess": false,
-            "WoodCrafting:NoviceWoodcraftingProcess": false,
-            "WoodCrafting:StandardWoodcraftingProcess": false,
-            "Crafting:UpgradeCraftingWorkstation": false
+            "WoodCrafting:BasicWoodcraftingProcess" : {
+                "processName": "WoodCrafting:BasicWoodcraftingProcess",
+                "processLevel": 15,
+                "isAutomatic": false
+            },
+            "WoodCrafting:NoviceWoodcraftingProcess" : {
+                "processName": "WoodCrafting:NoviceWoodcraftingProcess",
+                "processLevel": 20,
+                "isAutomatic": false
+            },
+            "WoodCrafting:StandardWoodcraftingProcess" : {
+                "processName": "WoodCrafting:StandardWoodcraftingProcess",
+                "processLevel": 30,
+                "isAutomatic": false
+            },
+            "Crafting:UpgradeCraftingWorkstation" : {
+                "processName": "Crafting:UpgradeCraftingWorkstation",
+                "processLevel": 10,
+                "isAutomatic": false
+            }
         }
     },
     "WorkstationInventory": {

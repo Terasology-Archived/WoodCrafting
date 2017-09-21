@@ -17,8 +17,16 @@
     },
     "Workstation": {
         "supportedProcessTypes": {
-            "WoodCrafting:BasicWoodcraftingProcess": false,
-            "Crafting:UpgradeCraftingWorkstation": false
+            "WoodCrafting:BasicWoodcraftingProcess" : {
+                "processName": "WoodCrafting:BasicWoodcraftingProcess",
+                "processLevel": 10,
+                "isAutomatic": false
+            },
+            "Crafting:UpgradeCraftingWorkstation" : {
+                "processName": "Crafting:UpgradeCraftingWorkstation",
+                "processLevel": 10,
+                "isAutomatic": false
+            }
         }
     },
     "WorkstationInventory": {
