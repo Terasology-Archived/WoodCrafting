@@ -16,6 +16,10 @@
 package org.terasology.woodCrafting;
 
 public final class Woodcrafting {
+    public static final String WOODCRAFTING_PROCESS = "WoodCrafting:WoodcraftingProcess";
+    public static final int WOODCRAFTING_PROCESS_LEVEL_BASIC = 10;
+    public static final int WOODCRAFTING_PROCESS_LEVEL_NOVICE = 20;
+    public static final int WOODCRAFTING_PROCESS_LEVEL_STANDARD = 30;
     public static final String BASIC_WOODCRAFTING_PROCESS_TYPE = "Woodcrafting:BasicWoodcrafting";
     public static final String BASIC_WOODCRAFTING_PROCESS = "WoodCrafting:BasicWoodcraftingProcess";
     public static final String NOVICE_WOODCRAFTING_PROCESS_TYPE = "Woodcrafting:NoviceWoodcrafting";

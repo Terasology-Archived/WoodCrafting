@@ -1,16 +1,15 @@
 {
-    "Parent": "NoviceWoodcraftingBaseProcessPart",
     "ProcessDefinition": {
         "processType": "WoodCrafting:WoodcraftingProcess",
-        "processLevel": 11
+        "processLevel": 5
     },
     "CraftingStationRecipe": {
-        "recipeId": "Materials|Woodcrafting:Stick",
+        "recipeId": "Tools|Woodcrafting:WoodAxeHammer",
 
-        "recipeComponents": ["1*Woodcrafting:wood"],
+        "recipeComponents": ["1*Woodcrafting:axeHammerHead", "1*Woodcrafting:twig", "2*Woodcrafting:stick"],
         "recipeTools": ["1*axe"],
 
-        "itemResult": "6*Woodcrafting:Stick"
+        "itemResult": "1*Woodcrafting:WoodAxeHammer"
     },
     "ProcessingTime": {
         "duration": 1000
@@ -22,12 +21,14 @@
     },
     "InventoryInput": {
         "itemCounts": {
-            "Woodcrafting:WoodLog": 1
+            "Woodcrafting:axeHammerHead": 1,
+            "Woodcrafting:twig": 1,
+            "Woodcrafting:stick": 2
         }
     },
     "InventoryOutput": {
         "itemCounts": {
-            "Woodcrafting:Stick": 6
+            "Woodcrafting:WoodAxeHammer": 1
         }
     }
 }

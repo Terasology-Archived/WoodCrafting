@@ -5,7 +5,8 @@
         "stackId": "Woodcrafting:items#WoodenBucket"
     },
     "DisplayName": {
-        "name": "Wooden Bucket"
+        "name": "Wooden Bucket",
+        "description": "A bucket made out of regular wood that can hold up to 10 liters of fluid."
     },
     "FluidContainerItem": {
         "volume": 10,

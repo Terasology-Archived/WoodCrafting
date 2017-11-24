@@ -12,18 +12,8 @@
     },
     "Workstation": {
         "supportedProcessTypes": {
-            "WoodCrafting:BasicWoodcraftingProcess" : {
-                "processName": "WoodCrafting:BasicWoodcraftingProcess",
-                "processLevel": 15,
-                "isAutomatic": false
-            },
-            "WoodCrafting:NoviceWoodcraftingProcess" : {
-                "processName": "WoodCrafting:NoviceWoodcraftingProcess",
-                "processLevel": 20,
-                "isAutomatic": false
-            },
-            "WoodCrafting:StandardWoodcraftingProcess" : {
-                "processName": "WoodCrafting:StandardWoodcraftingProcess",
+            "WoodCrafting:WoodcraftingProcess" : {
+                "processName": "WoodCrafting:WoodcraftingProcess",
                 "processLevel": 30,
                 "isAutomatic": false
             },

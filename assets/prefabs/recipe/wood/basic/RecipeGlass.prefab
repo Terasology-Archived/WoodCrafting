@@ -1,7 +1,7 @@
 {
-    "Parent": "BasicWoodcraftingBaseProcessPart",
     "ProcessDefinition": {
-        "processType": "WoodCrafting:BasicWoodcraftingProcess"
+        "processType": "WoodCrafting:WoodcraftingProcess",
+        "processLevel": 5
     },
     "CraftingStationRecipe": {
         "recipeId": "Materials|Woodcrafting:Glass",

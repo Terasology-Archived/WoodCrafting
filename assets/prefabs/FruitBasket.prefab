@@ -4,7 +4,8 @@
         "icon": "Woodcrafting:items#Basket"
     },
     "DisplayName": {
-        "name": "Simple Basket"
+        "name": "Simple Basket",
+        "description": "A basket for holding 8 kinds of fruit."
     },
     "Network": {},
     "Inventory": {

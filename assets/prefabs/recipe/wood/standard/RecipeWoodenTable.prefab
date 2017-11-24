@@ -1,6 +1,7 @@
 {
     "ProcessDefinition": {
-        "processType": "WoodCrafting:StandardWoodcraftingProcess"
+        "processType": "WoodCrafting:WoodcraftingProcess",
+        "processLevel": 27
     },
     "CraftingStationRecipe": {
         "recipeId": "Building|Woodcrafting:WoodenTable",

@@ -5,7 +5,8 @@
         "stackId": "Woodcrafting:items#Stick"
     },
     "DisplayName": {
-        "name": "Stick"
+        "name": "Stick",
+        "description": "A stick retrieved from a tree branch. Used for several crude items as well as fuel for fire."
     },
     "CraftInHandIngredient": {
         "componentType": "Woodcrafting:stick"

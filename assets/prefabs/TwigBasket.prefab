@@ -1,4 +1,8 @@
 {
+    "DisplayName": {
+        "name": "Twig Basket",
+        "description": "A basket made out of twigs that can store 10 items."
+    },
     "Network": {},
     "Inventory": {
         "privateToOwner": false,

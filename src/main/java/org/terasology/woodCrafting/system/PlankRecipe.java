@@ -18,9 +18,12 @@ package org.terasology.woodCrafting.system;
 import com.google.common.base.Predicate;
 import org.terasology.entitySystem.entity.EntityRef;
 import org.terasology.entitySystem.prefab.Prefab;
+import org.terasology.inGameHelpAPI.components.ItemHelpComponent;
 import org.terasology.logic.common.DisplayNameComponent;
+import org.terasology.logic.inventory.ItemComponent;
 import org.terasology.processing.component.TreeTypeComponent;
 import org.terasology.rendering.nui.layers.ingame.inventory.ItemIcon;
+import org.terasology.rendering.nui.widgets.TooltipLine;
 import org.terasology.utilities.Assets;
 import org.terasology.workstationCrafting.system.recipe.behaviour.ConsumeItemCraftBehaviour;
 import org.terasology.workstationCrafting.system.recipe.behaviour.InventorySlotResolver;
@@ -31,6 +34,8 @@ import org.terasology.workstationCrafting.system.recipe.workstation.AbstractWork
 import org.terasology.workstationCrafting.system.recipe.workstation.CraftingStationIngredientPredicate;
 import org.terasology.workstationCrafting.system.recipe.workstation.CraftingStationToolPredicate;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -54,11 +59,36 @@ public class PlankRecipe extends AbstractWorkstationRecipe {
 
         @Override
         public void setupDisplay(List<String> parameters, ItemIcon itemIcon) {
-            super.setupDisplay(parameters, itemIcon);
+            // Get the ItemComponent, and use it to set the item's icon.
+            ItemComponent item = prefab.getComponent(ItemComponent.class);
+            itemIcon.setIcon(item.icon);
 
-            final String[] split = parameters.get(0).split("\\|");
-            if (split.length > 1) {
-                itemIcon.setTooltip(split[1] + " Plank");
+            // Set the tooltip lines for this item. This include its name, category, and (short) description. That is, as
+            // long as it has a name.
+            DisplayNameComponent displayName = prefab.getComponent(DisplayNameComponent.class);
+            if (displayName != null) {
+
+                // Get the wood type name of this plank, and prepend it to the plank's display name.
+                final String[] split = parameters.get(0).split("\\|");
+                if (split.length > 1) {
+                    displayName.name = split[1] + " Plank";
+                }
+
+                ArrayList<TooltipLine> tooltipLines = new ArrayList<>(Arrays.asList(new TooltipLine(displayName.name)));
+
+                // If this prefab is registered into the InGameHelp system, get its category and add it into the tooltip.
+                if (prefab.hasComponent(ItemHelpComponent.class))
+                {
+                    ItemHelpComponent itemHelp = prefab.getComponent(ItemHelpComponent.class);
+                    tooltipLines.add(new TooltipLine(itemHelp.getCategory()));
+                }
+                // If this prefab has a description, add it into the tooltip.
+                if (!displayName.description.equals("")) {
+                    tooltipLines.add(new TooltipLine(displayName.description));
+                }
+
+                // Set the item prefab's full tooltip or description.
+                itemIcon.setTooltipLines(tooltipLines);
             }
         }
 
@@ -72,6 +102,7 @@ public class PlankRecipe extends AbstractWorkstationRecipe {
 
                 DisplayNameComponent displayName = result.getComponent(DisplayNameComponent.class);
                 displayName.name = treeType + " Plank";
+                displayName.description = "A plank made out of " + treeType;
                 result.saveComponent(displayName);
 
                 TreeTypeComponent treeTypeComponent = new TreeTypeComponent();

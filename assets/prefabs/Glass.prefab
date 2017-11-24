@@ -5,7 +5,8 @@
         "stackId": "Woodcrafting:glass"
     },
     "DisplayName": {
-        "name": "Glass Shard"
+        "name": "Glass Shard",
+        "description": "A transparent solid that is used in the construction of many items."
     },
     "CraftInHandIngredient": {
         "componentType": "Woodcrafting:glass"

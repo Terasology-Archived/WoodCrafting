@@ -12,8 +12,8 @@
     },
     "Workstation": {
         "supportedProcessTypes": {
-            "WoodCrafting:BasicWoodcraftingProcess" : {
-                "processName": "WoodCrafting:BasicWoodcraftingProcess",
+            "WoodCrafting:WoodcraftingProcess" : {
+                "processName": "WoodCrafting:WoodcraftingProcess",
                 "processLevel": 10,
                 "isAutomatic": false
             },

@@ -1,11 +1,15 @@
 {
+    "DisplayName": {
+        "name": "Wooden Table",
+        "description": "A table constructed from wood. Necessary for building several crafting stations."
+    },
     "CraftingStationMaterial": {
         "stationType": "Stonecrafting:BasicStonecraftingStation"
     },
     "ItemHelp": {
         "category": "Woodcrafting",
         "paragraphText": [
-          "A table constructed from wood. Necessary for several crafting stations."
+          "A table constructed from wood. Necessary for building several crafting stations."
         ]
     }
 }

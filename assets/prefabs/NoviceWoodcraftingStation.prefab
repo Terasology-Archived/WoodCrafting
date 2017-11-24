@@ -12,19 +12,9 @@
     },
     "Workstation": {
         "supportedProcessTypes": {
-            "WoodCrafting:BasicWoodcraftingProcess" : {
-                "processName": "WoodCrafting:BasicWoodcraftingProcess",
-                "processLevel": 15,
-                "isAutomatic": false
-            },
-            "WoodCrafting:NoviceWoodcraftingProcess" : {
-                "processName": "WoodCrafting:NoviceWoodcraftingProcess",
+            "WoodCrafting:WoodcraftingProcess" : {
+                "processName": "WoodCrafting:WoodcraftingProcess",
                 "processLevel": 20,
-                "isAutomatic": false
-            },
-            "WoodCrafting:StandardWoodcraftingProcess" : {
-                "processName": "WoodCrafting:StandardWoodcraftingProcess",
-                "processLevel": 30,
                 "isAutomatic": false
             },
             "Crafting:UpgradeCraftingWorkstation" : {
@@ -90,7 +80,7 @@
         "paragraphText": [
           "A two-block station that allows the user to craft up to novice-level wood items.",
           "This is the upgraded form of the Basic Woodcrafting Station.",
-          "This station can be upgraded with 20 wood planks and an axe."
+          "This station can be upgraded to the Standard Woodcrafting Station with 20 wood planks and an axe."
         ]
     }
 }
