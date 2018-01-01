@@ -18,6 +18,14 @@ Each station has a slightly different UI, allowing for different inputs, tools, 
 
 It is important to remember that Wood Crafting is a system. This means that you can make your own module that houses your recipes and crafting stations so you won't have to modify Wood Crafting.
 
+## Getting started
+You're probably wondering how to actually craft an item. Here's how you get started.
+
+1. Whip out your pickaxe (No, a shovel won't work)
+2. Start mining dirt until you have 3-5 stones and 2-3 flint
+3. Press "n" to open the hand crafting menu
+4. Click the craft button of one of the available items
+
 # Recipes
 Here is a complete list of craftable items in this module:
 
