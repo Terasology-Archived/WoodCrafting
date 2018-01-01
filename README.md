@@ -21,36 +21,18 @@ It is important to remember that Wood Crafting is a system. This means that you 
 ## Getting started
 You're probably wondering how to actually craft an item. Here's how you get started.
 
-1. Whip out your pickaxe (No, a shovel won't work)
+1. Whip out your pickaxe (Using a shovel will not result a stone, you must use a pick)
 2. Start mining dirt until you have 3-5 stones and 2-3 flint
 3. Press "n" to open the hand crafting menu
 4. Click the craft button of one of the available items
 
 # Recipes
-Here is a complete list of craftable items in this module:
+Here is a reference to all the craftable items in this module:
 
-## In-hand crafting items
-- Axe-hammer Head
-- Clay Hearth
-- Crude Axe-hammer
-- Crude How
-- Lit Torch
-- Unlit Torch
-- Stone Knife Blade
-- Stone Knife
-- Stone Long Knife Blade
-- Stone Long Knife
-- Tool Stone
+[In-hand crafting items](https://github.com/Terasology/WoodCrafting/tree/master/assets/prefabs/recipe/hand)
 
-## Basic Station crafting items
-- Fruit Basket
-- Glass
+[Basic Station crafting items](https://github.com/Terasology/WoodCrafting/tree/master/assets/prefabs/recipe/wood/basic)
 
-## Novice Station crafting items
-- Stick
-- Twig Basket
+[Novice Station crafting items](https://github.com/Terasology/WoodCrafting/tree/master/assets/prefabs/recipe/wood/novice)
 
-## Standard Station crafting items
-- Wooden Bucket
-- Wooden Fence
-- Wooden Table
+[Standard Station crafting items](https://github.com/Terasology/WoodCrafting/tree/master/assets/prefabs/recipe/wood/standard)
