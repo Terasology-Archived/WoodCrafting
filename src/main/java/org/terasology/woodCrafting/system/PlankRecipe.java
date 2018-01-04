@@ -77,8 +77,7 @@ public class PlankRecipe extends AbstractWorkstationRecipe {
                 ArrayList<TooltipLine> tooltipLines = new ArrayList<>(Arrays.asList(new TooltipLine(displayName.name)));
 
                 // If this prefab is registered into the InGameHelp system, get its category and add it into the tooltip.
-                if (prefab.hasComponent(ItemHelpComponent.class))
-                {
+                if (prefab.hasComponent(ItemHelpComponent.class)) {
                     ItemHelpComponent itemHelp = prefab.getComponent(ItemHelpComponent.class);
                     tooltipLines.add(new TooltipLine(itemHelp.getCategory()));
                 }

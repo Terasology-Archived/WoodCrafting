@@ -99,7 +99,12 @@ public class RegisterWoodcraftingRecipes extends BaseComponentSystem {
                         "Materials|Woodcrafting:WoodPlank", new PlankRecipe(2), null, entityManager));
     }
 
+    /**
+     * Add the recipe for creating the base level WoodcraftingStation.
+     */
     private void addWorkstationFormingRecipes() {
+        // In order to create a BasicWoodcraftingStation, a player must place two wooden logs next to each other, and
+        // use an "axe" tool on them.
         multiBlockFormRecipeRegistry.addMultiBlockFormItemRecipe(
                 new UniformMultiBlockFormItemRecipe(new ToolTypeEntityFilter("axe"), new UseOnTopFilter(),
                         new StationTypeFilter("Woodcrafting:BasicWoodcraftingStation"), new Basic3DSizeFilter(2, 1, 1, 1),
@@ -107,8 +112,14 @@ public class RegisterWoodcraftingRecipes extends BaseComponentSystem {
                         new UniformBlockReplacementCallback<Void>(blockManager.getBlock("Woodcrafting:BasicWoodStation"))));
     }
 
+    /**
+     * Add the Woodcrafting recipes that are only available if the workstation supports of a standard process level of Woodcrafting.
+     */
     private void addStandardWoodWorkstationBlockShapeRecipes() {
+        // Add the regular plank block recipes.
         addPlankBlockRecipes();
+
+        // Add the fine plank block recipes.
         addWorkstationBlockShapesRecipe(Woodcrafting.WOODCRAFTING_PROCESS, Woodcrafting.WOODCRAFTING_PROCESS_LEVEL_STANDARD,
                 "Building|Fine Planks|Woodcrafting:FinePlankBlock", "Woodcrafting:plank", 4, "hammer", 1,
                 "Woodcrafting:FinePlank", 1);
@@ -179,11 +190,12 @@ public class RegisterWoodcraftingRecipes extends BaseComponentSystem {
     private void addShapeRecipe(String processType, int processLevel, String recipeNamePrefix, String ingredient, int ingredientBasicCount,
                                 String tool, int toolDurability, String blockResultPrefix, int blockResultCount,
                                 String shape, String module, int ingredientMultiplier, int resultMultiplier, int toolDurabilityMultiplier) {
-        DefaultWorkstationRecipe shapeRecipe = new DefaultWorkstationRecipe();
-        shapeRecipe.addIngredient(ingredient, ingredientBasicCount * ingredientMultiplier);
-        shapeRecipe.addRequiredTool(tool, toolDurability * toolDurabilityMultiplier);
-        shapeRecipe.setResultFactory(new BlockRecipeResultFactory(blockManager.getBlockFamily(blockResultPrefix + ":" + module + ":" + shape).getArchetypeBlock(),
-                blockResultCount * resultMultiplier));
+        PlankBlockRecipe shapeRecipe = new PlankBlockRecipe(ingredientBasicCount * ingredientMultiplier, toolDurability * toolDurabilityMultiplier, shape,
+                blockManager.getBlockFamily(blockResultPrefix + ":" + module + ":" + shape).getArchetypeBlock(), blockResultCount * resultMultiplier);
+        //shapeRecipe.addIngredient(ingredient, ingredientBasicCount * ingredientMultiplier);
+        //shapeRecipe.addRequiredTool(tool, toolDurability * toolDurabilityMultiplier);
+        /*shapeRecipe.setResultFactory(new BlockRecipeResultFactory(blockManager.getBlockFamily(blockResultPrefix + ":" + module + ":" + shape).getArchetypeBlock(),
+                blockResultCount * resultMultiplier));*/
 
         workstationRegistry.registerProcess(processType, new CraftingWorkstationProcess(processType, processLevel, recipeNamePrefix + shape, shapeRecipe, null, entityManager));
     }
