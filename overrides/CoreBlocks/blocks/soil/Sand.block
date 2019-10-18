@@ -1,9 +1,9 @@
 {
-    "basedOn": "core:soil",
+    "basedOn": "CoreAssets:soil",
     "hardness": 2,
     "mass": 32,
     "entity": {
         "prefab": "Woodcrafting:Sand"
     },
-    "sounds": "Core:sand"
+    "sounds": "CoreAssets:sand"
 }

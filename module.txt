@@ -1,6 +1,6 @@
 {
     "id" : "WoodCrafting",
-    "version" : "1.0.2-SNAPSHOT",
+    "version" : "1.0.3-SNAPSHOT",
     "author" : "XTariq",
     "displayName" : "Woodcrafting",
     "description" : "Module that introduces crafting of several wood-based items through workstations. This module relies on the use of the NeoTTA world generator",

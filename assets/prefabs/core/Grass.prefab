@@ -3,7 +3,7 @@
         "itemDrops": ["0.5|Woodcrafting:stone", "0.1|Woodcrafting:flint"],
         "droppedWithTool": {
             "soil": {
-                blockDrops: ["1|Core:Dirt"]
+                blockDrops: ["1|CoreBlocks:Dirt"]
             }
         }
     },
