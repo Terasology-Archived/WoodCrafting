@@ -3,7 +3,7 @@
         "name": "Basic Woodcrafting Station"
     },
     "Network": {},
-    "BlockDropGrammar": {
+    "DropGrammar": {
         "itemDrops": ["4*Woodcrafting:WoodPlank"]
     },
     "InteractionTarget": {},
