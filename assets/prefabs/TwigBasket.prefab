@@ -26,7 +26,7 @@
     },
     "InteractionTarget": {},
     "InteractionScreen": {
-        "screen": "core:containerScreen"
+        "screen": "Inventory:containerScreen"
     },
     "ItemHelp": {
         "category": "Woodcrafting",
