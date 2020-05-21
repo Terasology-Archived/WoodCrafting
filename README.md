@@ -63,9 +63,8 @@ Here is a reference to all the craftable items in this module:
 
 ## Adding Processes
 
-* Add the process definition under assets/prefabs/processDefinitions. Use the preexisting ones as templates.
-* Add a static variable containing the name of the process in src/main/java/org/terasology/woodCrafting/Woodcrafting.java
-* In src/main/java/org/terasology/woodCrafting/system/RegisterWoodcraftingRecipes.java, add this process to the process
-factory (registerProcessFactory).
+* Add the process definition under `assets/prefabs/processDefinitions`. Use the pre-existing ones as templates.
+* Add a static variable containing the name of the process in the [`WoodCrafting` class](/src/main/java/org/terasology/woodCrafting/Woodcrafting.java).
+* Add this process to the process factory by using `registerProcess` in the [`RegisterWoodcraftingRecipes` class](/src/main/java/org/terasology/woodCrafting/system/RegisterWoodcraftingRecipes.java).
 
 Now, you should be able to use this process in a workstation or recipe.
