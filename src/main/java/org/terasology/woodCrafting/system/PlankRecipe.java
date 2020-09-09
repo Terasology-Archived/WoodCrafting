@@ -1,27 +1,14 @@
-/*
- * Copyright 2016 MovingBlocks
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+// Copyright 2020 The Terasology Foundation
+// SPDX-License-Identifier: Apache-2.0
 package org.terasology.woodCrafting.system;
 
 import com.google.common.base.Predicate;
-import org.terasology.entitySystem.entity.EntityRef;
-import org.terasology.entitySystem.prefab.Prefab;
-import org.terasology.logic.common.DisplayNameComponent;
+import org.terasology.engine.entitySystem.entity.EntityRef;
+import org.terasology.engine.entitySystem.prefab.Prefab;
+import org.terasology.engine.logic.common.DisplayNameComponent;
+import org.terasology.engine.utilities.Assets;
+import org.terasology.inventory.rendering.nui.layers.ingame.ItemIcon;
 import org.terasology.processing.component.TreeTypeComponent;
-import org.terasology.rendering.nui.layers.ingame.inventory.ItemIcon;
-import org.terasology.utilities.Assets;
 import org.terasology.workstationCrafting.system.recipe.behaviour.ConsumeItemCraftBehaviour;
 import org.terasology.workstationCrafting.system.recipe.behaviour.InventorySlotResolver;
 import org.terasology.workstationCrafting.system.recipe.behaviour.InventorySlotTypeResolver;
@@ -41,7 +28,8 @@ public class PlankRecipe extends AbstractWorkstationRecipe {
         Predicate<EntityRef> woodPredicate = new CraftingStationIngredientPredicate("Woodcrafting:wood");
         Predicate<EntityRef> axePredicate = new CraftingStationToolPredicate("axe");
 
-        addIngredientBehaviour(new ConsumeWoodIngredientBehaviour(woodPredicate, 1, new InventorySlotTypeResolver("INPUT")));
+        addIngredientBehaviour(new ConsumeWoodIngredientBehaviour(woodPredicate, 1, new InventorySlotTypeResolver(
+                "INPUT")));
         addToolBehaviour(new ReduceDurabilityCraftBehaviour(axePredicate, 1, new InventorySlotTypeResolver("TOOL")));
 
         setResultFactory(new PlankRecipeResultFactory(Assets.getPrefab("Woodcrafting:WoodPlank").get(), plankCount));
@@ -84,7 +72,8 @@ public class PlankRecipe extends AbstractWorkstationRecipe {
     }
 
     private final class ConsumeWoodIngredientBehaviour extends ConsumeItemCraftBehaviour {
-        private ConsumeWoodIngredientBehaviour(Predicate<EntityRef> matcher, int count, InventorySlotResolver resolver) {
+        private ConsumeWoodIngredientBehaviour(Predicate<EntityRef> matcher, int count,
+                                               InventorySlotResolver resolver) {
             super(matcher, count, resolver);
         }
 
