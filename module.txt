@@ -55,7 +55,7 @@
     },
     {
       "id": "WorkstationCrafting",
-      "minVersion": "1.0.1"
+      "minVersion": "2.0.0"
     }
   ],
   "serverSideOnly": false,
