@@ -16,9 +16,12 @@
 package org.terasology.woodCrafting.system;
 
 import com.google.common.base.Predicate;
-import org.terasology.entitySystem.entity.EntityRef;
+import org.terasology.engine.entitySystem.entity.EntityRef;
+import org.terasology.engine.registry.CoreRegistry;
+import org.terasology.engine.world.block.Block;
+import org.terasology.engine.world.block.BlockManager;
+import org.terasology.engine.world.block.BlockUri;
 import org.terasology.processing.component.TreeTypeComponent;
-import org.terasology.registry.CoreRegistry;
 import org.terasology.workstationCrafting.system.recipe.behaviour.ConsumeItemCraftBehaviour;
 import org.terasology.workstationCrafting.system.recipe.behaviour.InventorySlotResolver;
 import org.terasology.workstationCrafting.system.recipe.behaviour.InventorySlotTypeResolver;
@@ -27,9 +30,6 @@ import org.terasology.workstationCrafting.system.recipe.render.result.BlockRecip
 import org.terasology.workstationCrafting.system.recipe.workstation.AbstractWorkstationRecipe;
 import org.terasology.workstationCrafting.system.recipe.workstation.CraftingStationIngredientPredicate;
 import org.terasology.workstationCrafting.system.recipe.workstation.CraftingStationToolPredicate;
-import org.terasology.world.block.Block;
-import org.terasology.world.block.BlockManager;
-import org.terasology.world.block.BlockUri;
 
 import java.util.List;
 
