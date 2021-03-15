@@ -19,7 +19,7 @@ import com.google.common.base.Predicate;
 import org.terasology.engine.entitySystem.entity.EntityRef;
 import org.terasology.engine.entitySystem.prefab.Prefab;
 import org.terasology.engine.logic.common.DisplayNameComponent;
-import org.terasology.engine.rendering.nui.layers.ingame.inventory.ItemIcon;
+import org.terasology.rendering.nui.layers.ingame.inventory.ItemIcon;
 import org.terasology.engine.utilities.Assets;
 import org.terasology.processing.component.TreeTypeComponent;
 import org.terasology.workstationCrafting.system.recipe.behaviour.ConsumeItemCraftBehaviour;
