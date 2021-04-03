@@ -25,7 +25,7 @@ import org.terasology.engine.logic.inventory.ItemComponent;
 import org.terasology.engine.registry.CoreRegistry;
 import org.terasology.module.inventory.ui.ItemIcon;
 import org.terasology.engine.utilities.Assets;
-import org.terasology.naming.Name;
+import org.terasology.gestalt.naming.Name;
 import org.terasology.workstationCrafting.system.recipe.behaviour.ConsumeItemCraftBehaviour;
 import org.terasology.workstationCrafting.system.recipe.behaviour.IngredientCraftBehaviour;
 import org.terasology.workstationCrafting.system.recipe.behaviour.ReduceDurabilityCraftBehaviour;
